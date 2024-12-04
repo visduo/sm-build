@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 配置MyBatis框架运行时行为 -->
+    <settings>
+        <!-- 配置日志实现 -->
+        <setting name="logImpl" value="LOG4J"/>
+        <!-- 配置自动映射级别 -->
+        <setting name="autoMappingBehavior" value="FULL"/>
+        <!-- 配置下划线转驼峰 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 配置SQL映射文件 -->
+    <mappers>
+        <package name="cn.duozai.dao"/>
+    </mappers>
+</configuration>
